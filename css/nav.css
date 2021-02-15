@@ -1,0 +1,12 @@
+.nav-bar {
+  margin: 50px;
+  background: transparent;
+}
+.nav-bar__item {
+  margin: 0px 50px;
+}
+.nav-bar__item--white {
+  color: white;
+  /* change the font */
+  /* change the size */
+}

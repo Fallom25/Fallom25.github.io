@@ -1,0 +1,31 @@
+.footer__box {
+  background-color: #222059;
+}
+.footer__icons {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+.footer__icons--white {
+  color: white;
+}
+.footer__head {
+  display: flex;
+  justify-content: center;
+}
+.footer__head--white {
+  color: white;
+}
+.footer__head--border {
+  padding: 40px;
+  background-color: rgba(124, 131, 166, 0.5);
+  border: 10px solid silver;
+  border-radius: 50px;
+}
+.footer__cr {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 100px;
+  color: white;
+  font-weight: bold;
+}

@@ -1,0 +1,14 @@
+.skill{
+  color:white;
+
+  &__box{
+    padding:50px;
+    background-color:rgba(124, 131, 166, 0.5);
+    border: 10px solid silver;
+    border-radius: 50px;
+  }
+
+  &__icons{
+    color:white;
+  }
+}

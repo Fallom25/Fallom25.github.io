@@ -1,0 +1,14 @@
+.nav-bar{
+  margin:50px;
+  background:transparent;
+  &__item{
+    margin: 0px 50px;
+    &--white{
+      color:white;
+        /* change the font */
+  /* change the size */
+    }
+  }
+
+}
+
