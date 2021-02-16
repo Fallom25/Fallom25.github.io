@@ -8,7 +8,6 @@
 .background__img {
   border-radius: 10%;
   border: 10px solid silver;
-  margin-left: 125px;
 }
 .background__box {
   padding: 40px;
@@ -18,4 +17,11 @@
 }
 .background__header {
   margin-bottom: 50px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+}
+.background__text {
+  line-height: 1.8;
+  font-family: "Roboto", sans-serif;
+  font-weight: light 300;
 }

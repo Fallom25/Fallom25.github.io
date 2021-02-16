@@ -14,24 +14,29 @@
   <link rel="stylesheet" href="/css/skill.css">
   <link rel="stylesheet" href="/css/footer.css">
   <link rel="stylesheet" href="/css/projects.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Space+Grotesk&display=swap" rel="stylesheet">
 </head>
 <body>
-  
-  <nav id="jump-home">
-    <ul class=" nav nav-bar justify-content-center fixed-top">
-      <li class="nav-item nav-bar__item">
-        <a class="nav-link active nav-bar__item--white" href="#jump-background">Background</a>
-      </li>
-      <li class="nav-item nav-bar__item">
-        <a class="nav-link nav-bar__item--white" href="#jump-skills">Skills</a>
-      </li>
-      <li class="nav-item nav-bar__item">
-        <a class="nav-link nav-bar__item--white" href="#jump-projects">Projects</a>
-      </li>
-      <li class="nav-item nav-bar__item">
-        <a class="nav-link nav-bar__item--white" href="#jump-contact">Contact Me</a>
-      </li>
-    </ul>
+
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-image: url(/pictures/smallgal.jpeg);" id="jump-home">
+    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon custom-toggler"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-around" id="navbarToggler">
+      <ul class="navbar-nav justify-content-around nav-bar--active">
+        <ul class=" nav nav-bar justify-content-around fixed-top nav-bar--active" >
+          <li class= "nav-item nav-bar__item active">
+            <a class="nav-link active nav-bar__item--white h4" href="#jump-background">Background</a>
+          </li>
+        <li class="nav-item nav-bar__item">
+          <a class="nav-link nav-bar__item--white h4" href="#jump-skills">Skills</a>
+        </li>
+        <li class="nav-item nav-bar__item">
+          <a class="nav-link nav-bar__item--white h4" href="#jump-projects">Projects</a>
+        </li>
+      </ul>
+    </div>
   </nav>
     
   <div class="home parallax">
@@ -41,69 +46,69 @@
 
   <main >
     <div class="section__img">
-      <div class="container">
-        <div class="row " style=height:200px;>
+      <div class="container "id="jump-background">
+        <div class="row " style="height:200px;">
         </div>
-          <div class="background background__box" id="jump-background">
+          <div class="background background__box"  >
           <div class="row">
-          <div class="col ">
+          <div class="col-lg-6 col-xs-12 text-center">
             <div class="background__header">
               <h1 >Background</h1>
             </div>
-            <div class="">
+            <div class="background__text">
               <p>
                 Currently Training as a Junior Software Engineer. I revel in the challenges and exciting new learning opportunities that _Nology presents. I'm thrilled to be working towards a career I am truly passionate about. I am a hard worker and who strives to complete tasks above the satisfaction of authorities. My jobs and hobbies demonstrate fantastic communication skills and determination to reach goals. Always striving for maximum efficiency and effectiveness. Previously experience in both the Aviation Industry with roles involving both Hard and Soft skills and the Hospitality industry with RSA, RSF and RSG Certifications. I also have a passion for teaching and learning.
               </p>
             </div>  
         </div>
-        <div class="col">
-          <img src="/pictures/profile.real.jpg" class="img-fluid background__img" >
+        <div class="col-lg-6 col-xs-12 ">
+          <img src="/pictures/profile.real.jpg" class="img-fluid background__img mx-auto d-block" >
         </div>
        </div>
       </div>
       </div>
   
-      <div class="container ">
+      <div class="container"id="jump-skills">
         <div class="row " style=height:200px;>
         </div>
-        <div class="skill skill__box" id="jump-skills">
+        <div class="skill skill__box" >
         <div class="row">
           <div class="col background__header">
           <h1 >Skills</h1>
           </div>
         </div>
-        <div class="row justify-content-end" style=height:150px;> 
-          <div class="col-3 ">
+        <div class="row text-left " style=height:150px;> 
+          <div class="col-md-4 col-xs-6 skill__icons">
             <!-- Css -->
-            <i class="fa fa-css3 fa-4x " aria-hidden="true"></i>
-            <p><br>CSS</p>
+            <i class="fa fa-css3 fa-4x skill__icons skill__icons--media skill__icons--css" aria-hidden="true"></i>
+            <p class="skill__icons"><br>CSS</p>
           </div>
-          <div class="col-3 ">
+          <div class="col-md-4 col-xs-6 skill__icons">
             <!-- Html -->
-            <i class="fa fa-html5 fa-4x" aria-hidden="true"></i>
-            <p><br>Html</p>
+            <i class="fa fa-html5 fa-4x skill__icons skill__icons--media skill__icons--html" aria-hidden="true"></i>
+            <p class="skill__icons"><br>Html</p>
           </div>
-          <div class="col-3 ">
+          <div class="col-md-4 col-xs-6 skill__icons">
             <!-- sass -->
-            <i class="fab fa-sass fa-4x"></i>
-            <p><br>Sass</p>
+            <i class="fab fa-sass fa-4x skill__icons skill__icons--media skill__icons--sass"></i>
+            <p class="skill__icons"><br>Sass</p>
           </div>
         </div>
-        <div class="row justify-content-center"> 
-          <div class="col-3 ">
+        <div class="row text-right"> 
+          <div class="col-md-4 col-xs-6 skill__icons">
             <!-- git -->
-            <i class="fab fa-git fa-4x"></i>
-            <p><br>Git</p>
+            <i class="fab fa-git fa-4x skill__icons skill__icons--media skill__icons--git"></i>
+            <p class="skill__icons"><br>Git</p>
           </div>
-          <div class="col-3 ">
+          <div class="col-md-4 col-xs-6 skill__icons">
             <!-- terminal -->
-            <i class="fas fa-terminal fa-4x"></i>
-            <p><br>Terminal</p>
+            <i class="fas fa-terminal fa-4x skill__icons skill__icons--media skill__icons--term"></i>
+            <p class="skill__icons"><br>Terminal</p>
           </div>
-          <div class="col-3 ">
+          <div class="col-md-4 col-xs-6 skill__icons">
             <!-- bootstrap -->
-            <i class="fab fa-bootstrap fa-4x"></i>
-            <p><br>Bootstrap</p>
+            <i class="fab fa-bootstrap fa-4x skill__icons skill__icons--media skill__icons--boot"></i>
+            <p class="skill__icons"><br>Bootstrap</p>
           </div>
         </div>
       </div>
@@ -113,12 +118,18 @@
     </div>
     
     <div class=" parallax projects">
-      <div class="parallax__img1"></div>
-      <h1 id="jump-projects" class=" parallax__text">Projects</h1>
+      <div  id="jump-projects" class="parallax__img1"></div>
+      <h1  class=" parallax__text">Projects</h1>
     </div>
     <div class="projects__img">
-      <div>
-        <h3>Work in Progress - -  Come Back Soon</h3>
+      <div class='container projects__container'>
+        <div class="row text-center">
+          <div class="col-12">
+            <h3 class="projects__text" >Work in Progress <br>Come Back Soon</h3>
+          </div>
+
+        </div>
+
       </div>
     </div>
 
@@ -130,16 +141,17 @@
     <div class="footer__icons">
     <!-- list of links using symbols (Git hub, email, linkedin ) -->
       <a href="https://github.com/Fallom25" target="_blank">
-        <i class="fa fa-github fa-4x footer__icons--white" aria-hidden="true"></i>
+        <i class="fa fa-github fa-3x footer__icons--white" aria-hidden="true"></i>
+      </a>
+      <a href="mailto:madd.sheppard@gmail.com">
+        <i class="fa fa-envelope fa-4x footer__icons--white" aria-hidden="true"></i>
       </a>
       <a href="https://www.linkedin.com/in/madd-sheppard-050a0178" target="_blank">
-        <i class="fa fa-linkedin fa-4x footer__icons--white" aria-hidden="true"></i>
+        <i class="fa fa-linkedin fa-3x footer__icons--white" aria-hidden="true"></i>
       </a>
     </div>
     
-    <div class="footer__head" >
-      <a href="#jump-home" class="footer__head--border footer__head--white">Head to the Top</a>
-    </div>
+    
     <!-- Copyright symbol, date and author info -->
     <div class="footer__cr ">
       <p>
@@ -147,7 +159,11 @@
         <i class="fa fa-copyright"  aria-hidden="true"></i>
         <span id="year"></span>
       </p>
-     
+      <div class="footer__head" >
+        <a href="#jump-home" class="">
+          <i class="far fa-caret-square-up fa-3x footer__icons--white footer__icons--spin "></i>
+        </a>
+      </div>
       <p>^.^</p>
     </div>
 

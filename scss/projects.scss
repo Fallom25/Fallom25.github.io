@@ -1,6 +1,26 @@
 .projects{
   &__img{
     background-image: url(/pictures/wall2.jpeg);
+  //   height:100px;    
+  //   transition: height 6s;
+  //   transition-duration: 10s;
+  // transition-timing-function: ease;
+
+
+    // &:hover{
+    //   height:fit-content;
+    // }
+  }
+  &__container{
+    // margin:50px;
+    padding-top:22%;
+    padding-bottom: 25%;
+  }
+  &__text{
+    font-size: 3.5vw;
+    color:white;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
   }
   
 }

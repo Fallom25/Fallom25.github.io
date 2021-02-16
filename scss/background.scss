@@ -6,10 +6,9 @@
 }
 .background{
   color:white;
-    &__img{
+  &__img{
     border-radius: 10%;
     border:10px solid silver;
-    margin-left:125px;
   }
 
   &__box{
@@ -17,11 +16,19 @@
     background-color:rgba(124, 131, 166, 0.5);
     border: 10px solid silver;
     border-radius: 50px;
+    
   }
 
   &__header{
-    margin-bottom:50px; ;
+    margin-bottom:50px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
   }
 
+  &__text{
+    line-height: 1.8;
+    font-family: 'Roboto', sans-serif;
+    font-weight: light 300;
+  }
 
 }
