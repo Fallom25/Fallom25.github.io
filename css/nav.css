@@ -1,0 +1,28 @@
+.nav-bar {
+  margin: 50px;
+  background: transparent;
+}
+.nav-bar--active {
+  background-image: url(/pictures/smallgal.jpeg);
+  border-radius: 50px;
+}
+.nav-bar__item {
+  margin: 10px 50px;
+}
+.nav-bar__item--white {
+  color: white !important;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+.nav-bar__item--white:hover {
+  color: #9870ef !important;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(192,192,192)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: white;
+}

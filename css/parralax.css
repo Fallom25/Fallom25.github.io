@@ -1,0 +1,24 @@
+.parallax {
+  position: relative;
+  text-align: center;
+}
+.parallax__img1 {
+  background-image: url("../pictures/AdobeStock_89865661.jpeg");
+  /* Set a specific height fix as per nav text */
+  min-height: 1000px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3.5vw;
+  color: white;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+}
