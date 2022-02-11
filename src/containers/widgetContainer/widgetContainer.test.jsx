@@ -7,9 +7,6 @@ describe('Testing the WidgetContainer', () => {
   afterEach(cleanup);
 
   it('renders WidgetContainer', () => {
+    //snapshot
   });
-
-  it('renders child components', () => {
-  })
-
 });

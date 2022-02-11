@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import './progressBar.css';
 
 //to do make progress bar align with loading build selector that run inline with weatherinfo dispatch()
+//Issues with Progress bar described in README.md
 const ProgressBar = () => {
 
   const progressInt = () => {

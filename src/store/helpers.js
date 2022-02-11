@@ -26,6 +26,6 @@ const directionChanger = (oldDirection) => {
 /** Converts Wind Speed from m/s to km/h 
  * @param {number} oldSpeed
 */
-const speedChanger = (oldSpeed) => isNaN(oldSpeed) ? null : oldSpeed * 3.6;
+const speedChanger = (oldSpeed) => isNaN(oldSpeed) || oldSpeed < 0 ? null : oldSpeed * 3.6;
 
 export { directionChanger, speedChanger };

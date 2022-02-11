@@ -8,7 +8,7 @@ describe('Testing the text input of the WidgetEditor component', () => {
   //Arrange
   const formValues = {
     tempUnits: 'metric',
-    title: 'Test',
+    title: 'Test Title',
     windOn: true,
   }
 
@@ -21,16 +21,7 @@ describe('Testing the text input of the WidgetEditor component', () => {
     windSpeed: 'test Speed'
   }
 
-  const { getByTestId, rerender } = render(
-    <WidgetCard formValues={formValues} weatherObject={weatherInfo} />
-  );
-
   it("expect props to match inputted props", () => {
-
-    //ACT
-
-
-    //Assert
 
   });
 

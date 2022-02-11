@@ -33,6 +33,7 @@ const rootReducer = (state = initialState, action) => {
       };
     case 'WEATHERINFO_LOAD/fulfilled':
       const weatherObject = action.payload.data;
+      console.log(weatherObject);
 
       //change temp to rounded
       const roundedTemp = Math.round(weatherObject.main.temp);

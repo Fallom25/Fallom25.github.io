@@ -21,17 +21,18 @@ const loadGeolocation = () => (dispatch, getState) => {
       lat: latitude,
       lon: longitude
     });
-    const formValues = getFormValues(getState())
-    dispatch(loadWeatherInfo(formValues.tempUnits));
+    const { tempUnits } = getFormValues(getState());
+    dispatch(loadWeatherInfo(tempUnits));
   };
 
   const loadFailed = (error) => {
-    //timeout fail
-
-    //authfail
-
-    //bad response fail
-
+    /**
+     * For the Error handling of the loadGeolocation action these are the three use cases I would like to protect against and how I would handle it
+     * Timeout => running another getCurrentPosition upon Timeout
+     * Auth => A popup informing the user that Location is required to use this App 
+     *  or returning location of 0,0 so the user can use the App on the Global location
+     * Bad response => Console.log notes for the developer
+     */
     dispatch({
       type: 'GEOLOCATION_LOAD/failed',
       error: `Failed to load Geolocation because : ${error}`
@@ -57,12 +58,25 @@ const loadWeatherInfo = createAsyncThunk(
     const data = await response.json();
     return { data, tempUnits };
   });
+/**
+ * For the Error handling of the loadWeatherInfo action these are the three use cases I would like to protect against and how I would handle it
+ * Not Valid Lat and Long => Rerunning Loadgeolocation, then running again
+ * Invalid APIkey => Console.log notes for the developer
+ * Invalid tempUnits => Rerunning with units as standard
+ * Bad response => Console.log notes for the developer
+ */
+
 
 
 /** 
  * Actions that are not API related
 */
 
+/**
+ * Function to create LocationCookie to allow users location to be stored and geolocation not have to run on every render
+ * Ran into issues, wanted to leave for future implementation.
+ * More details in the README.md
+ */
 // const loadLocationCookie = () => async (dispatch) => {
 //   const cookie = new Cookies();
 //   const locationCookie = cookie.get('currentPosition');
@@ -78,7 +92,9 @@ const loadWeatherInfo = createAsyncThunk(
 //   }
 // }
 
-/**Function to handle the formValues and update the state and WeatherInfo
+/**
+ * Function to handle the formValues 
+ * dispatches Loadweatherinfo if Temperature Units have changed
  * @param {Object} formValues
 */
 const handleFormChange = (formValues) => (dispatch, getState) => {

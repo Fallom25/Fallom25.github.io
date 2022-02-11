@@ -16,11 +16,13 @@
 .card__content {
   display: flex;
   text-align: center;
+  width: 100%;
+}
+
+.card__content--icon {
+  width: 100%;
 }
 
 .card__content--wind {
   font-size: 14px;
 }
-
-
-

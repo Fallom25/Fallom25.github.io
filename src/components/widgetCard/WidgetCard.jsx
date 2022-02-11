@@ -6,7 +6,7 @@ const WidgetCard = ({ formValues, weatherObject }) => {
   return (
     <div className="card">
       <div className="card__title">
-        <h3 >{newTitle}</h3>
+        <h3 data-testid='widget-card-title'>{newTitle}</h3>
       </div>
       <div className="card__content">
         <img className="card__content--icon" src={`http://openweathermap.org/img/wn/${weatherObject.icon}@2x.png`} alt={weatherObject.description} />
