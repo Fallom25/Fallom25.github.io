@@ -1,0 +1,22 @@
+.widget__container {
+  border: 1px solid #cecece;
+  border-radius: 0 0 10px 10px;
+  background-color: #f5f5f5;
+  display: flex;
+  width: 763px;
+  height: 350px;
+}
+
+.widget__divider {
+  border-left: 1px solid #c9c9c9;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.widget__items {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

@@ -1,0 +1,26 @@
+.card {
+  background-color: #ffffff;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px 2px #e2e2e2;
+  align-self: center;
+  padding: 10px 30px 30px 30px;
+  margin: 10%;
+  height: fit-content;
+}
+
+.card__title {
+  text-align: start;
+  min-height: 40px;
+}
+
+.card__content {
+  display: flex;
+  text-align: center;
+}
+
+.card__content--wind {
+  font-size: 14px;
+}
+
+
+

@@ -1,0 +1,10 @@
+.progress__container {
+  width: 100%;
+  margin: 8px 0px;
+  background-color: #b0d0ef;
+}
+
+.progress__bar {
+  height: 4px;
+  background-color: #1976d2;
+}

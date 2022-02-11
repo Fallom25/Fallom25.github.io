@@ -1,0 +1,24 @@
+.form {
+  align-items: flex-start;
+  text-align: start;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.form__sections {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.form__input--text {
+  border-radius: 5px;
+  border: 1px solid #c9c9c9;
+  padding-left: 10px;
+  height: 30px;
+  width: 250px;
+}
+
+.form__input--radio-label {
+  margin-left: 10px;
+  margin-right: 80px;
+}
