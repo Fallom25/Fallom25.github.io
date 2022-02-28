@@ -1,0 +1,78 @@
+.skill {
+    color: white;
+
+    &__box {
+        padding: 50px;
+        background-color: rgba(124, 131, 166, 0.5);
+        border: 10px solid silver;
+        border-radius: 50px;
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 600;
+    }
+
+    &__icons {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        padding: 0px 30px 10px 30px;
+
+        &--media {
+            @media only screen and (max-width: 540px) {
+                font-size: 1.5em !important;
+            }
+        }
+
+        &--html:hover {
+            color: orange;
+            text-shadow: 0 0 10px #7c83a6;
+            filter: contrast(200%) brightness(100%);
+        }
+
+        &--css:hover {
+            color: rgb(85, 85, 236);
+            text-shadow: 0 0 10px #7c83a6;
+            filter: contrast(200%) brightness(100%);
+        }
+
+        &--sass:hover {
+            color: rgb(220, 120, 137);
+            text-shadow: 0 0 10px #7c83a6;
+            filter: contrast(200%) brightness(100%);
+        }
+
+        &--git:hover {
+            color: rgb(53, 52, 52);
+            text-shadow: 0 0 10px #7c83a6;
+            filter: contrast(200%) brightness(100%);
+        }
+
+        &--term:hover {
+            color: rgb(212, 212, 84);
+            text-shadow: 0 0 10px #7c83a6;
+            filter: contrast(200%) brightness(100%);
+        }
+
+        &--boot:hover {
+            color: rgba(69, 33, 69, 0.753);
+            text-shadow: 0 0 10px #7c83a6;
+            filter: contrast(200%) brightness(100%);
+        }
+
+        &--react:hover {
+            color: rgba(27, 149, 153, 0.753);
+            text-shadow: 0 0 10px #7c83a6;
+            filter: contrast(200%) brightness(100%);
+        }
+
+        &--node:hover {
+            color: rgb(26, 157, 26);
+            text-shadow: 0 0 10px #7c83a6;
+            filter: contrast(200%) brightness(100%);
+        }
+
+        &--fire:hover {
+            color: rgba(194, 56, 25, 0.753);
+            text-shadow: 0 0 10px #7c83a6;
+            filter: contrast(200%) brightness(100%);
+        }
+    }
+}

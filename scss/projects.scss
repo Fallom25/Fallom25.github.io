@@ -1,0 +1,15 @@
+.projects {
+    &__img {
+        background-image: url(/pictures/wall2.jpeg);
+    }
+    &__container {
+        padding-top: 22%;
+        padding-bottom: 25%;
+    }
+    &__text {
+        font-size: 3.5vw;
+        color: white;
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 600;
+    }
+}
